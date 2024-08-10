@@ -1,0 +1,4 @@
+site_name: docs.repo.trade
+site_url: https://docs.repo.trade
+theme:
+  name: material
