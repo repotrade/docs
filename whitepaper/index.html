@@ -1,0 +1,898 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.repo.trade/whitepaper/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../short-story/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
+    
+    
+      
+        <title>Whitepaper - docs.repo.trade</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#executive-summary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="docs.repo.trade" class="md-header__button md-logo" aria-label="docs.repo.trade" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            docs.repo.trade
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Whitepaper
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Whitepaper
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../short-story/" class="md-tabs__link">
+        
+  
+    
+  
+  Short Story
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../basics/wtf-is-repotrade/" class="md-tabs__link">
+          
+  
+    
+  
+  Basics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../concepts/namespaces/" class="md-tabs__link">
+          
+  
+    
+  
+  Concepts
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../glossary/" class="md-tabs__link">
+        
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../support/" class="md-tabs__link">
+        
+  
+    
+  
+  Support
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="docs.repo.trade" class="md-nav__button md-logo" aria-label="docs.repo.trade" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    docs.repo.trade
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Whitepaper
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../short-story/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Short Story
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/wtf-is-repotrade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WTF is repo.trade?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/how-it-works/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How it works
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concepts/namespaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Namespaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concepts/repos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concepts/rewards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rewards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concepts/swaps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Swaps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="executive-summary">Executive Summary</h1>
+<p>Repo.trade is a revolutionary platform designed to solve the persistent underfunding of critical open-source projects by applying successful Web3 engagement strategies. The platform operates in three stages: an initial angel investment period, a curve-based trading phase, and culminates in an decentralized exchange listing (DEL). Repo.trade offers multiple benefits for developers, including fee earnings and token allocations, while providing the community with rewards for engagement and entertainment. The project implements key features such as token-based incentives, gamification, tiered reward systems, and governance participation to drive user engagement and create economic value. By ticking most boxes for successful Web3 projects, including community building, transparency, and a unique value proposition, repo.trade aims to create a self-sustaining ecosystem that aligns the interests of all stakeholders. This innovative approach not only addresses the financial challenges of open-source development but also promotes innovation, enhances security, and contributes to the overall health of the open-source ecosystem.</p>
+<h1 id="introduction">Introduction</h1>
+<ul>
+<li>The open-source software development landscape faces a critical issue: chronic underfunding of essential projects.</li>
+<li>This underfunding persists despite the immense value these projects bring to the digital ecosystem.</li>
+<li>A stark contrast exists between this situation and the success of Web3 projects, where millions are invested in speculative ventures and meme coins.</li>
+<li>Repo.trade aims to bridge this gap by leveraging engagement farming strategies proven successful in the Web3 space.</li>
+<li>The goal is to create a sustainable funding model for open-source projects.</li>
+<li>Key strategies include implementing token-based incentives, gamification, and community-driven governance.</li>
+<li>Repo.trade seeks to align the interests of developers, users, and investors.</li>
+<li>This innovative approach addresses the financial challenges faced by open-source maintainers.</li>
+<li>It also enhances community engagement and fosters innovation.</li>
+<li>Ultimately, repo.trade aims to ensure the long-term viability of critical digital infrastructure.</li>
+</ul>
+<h1 id="problem-statement">Problem Statement</h1>
+<ul>
+<li>Chronic underfunding of critical open-source projects</li>
+<li>Misalignment between value creation and financial compensation in open-source</li>
+<li>Lack of sustainable business models for open-source maintainers</li>
+<li>Insufficient recognition and support from beneficiary companies and projects</li>
+<li>Risk to long-term viability and security of essential digital infrastructure</li>
+<li>Burnout and resource constraints among open-source maintainers</li>
+<li>Potential for reduced innovation and delayed updates in critical software</li>
+<li>Discouragement of talented developers from contributing to open-source</li>
+<li>Vulnerability to security risks due to inadequate resources for proper maintenance</li>
+<li>Threat to the overall health and growth of the open-source ecosystem</li>
+</ul>
+<h1 id="engagement-farming">Engagement farming</h1>
+<p>Meanwhile, people are throwing millions of dollars into meme coins merely for the purpose of entertainment and speculation.</p>
+<p>Based on the success of Web3 projects in general and pump.fun specifically, as well as the concept of engagement farming, we can learn precicely what is needed for this project:</p>
+<ol>
+<li>Token-based incentives: Rewarding users with tokens for active participation and engagement.</li>
+<li>Gamification of activities: Implementing game-like elements to make interactions more enjoyable and addictive.</li>
+<li>Tiered reward systems: Creating levels or tiers of engagement with increasing benefits to encourage long-term participation.</li>
+<li>Social networking features: Integrating social elements to foster community building and viral growth.</li>
+<li>Governance participation: Allowing token holders to vote on project decisions, creating a sense of ownership and involvement.</li>
+<li>Yield farming opportunities: Offering additional rewards for users who stake their tokens or provide liquidity.</li>
+<li>NFT integration: Using non-fungible tokens as unique rewards or access passes for engaged users.</li>
+<li>Referral programs: Incentivizing users to bring in new participants through referral bonuses.</li>
+<li>Cross-platform integrations: Partnering with other projects to create synergies and expand the user base.</li>
+</ol>
+<p>These strategies can create economic value by increasing user retention, driving token demand, expanding the user base, and creating a self-sustaining ecosystem of engaged participants.</p>
+<h1 id="solution-overview">Solution Overview</h1>
+<h1 id="stages">Stages</h1>
+<h2 id="stage-1-auction">Stage 1: Auction</h2>
+<p>After creating the token, it enters an auction period of 2 weeks. In this period, a daily auction takes place. Every day a certain percentage of the total supply is handed out to participants in the daily's round. To participate in the auction, a user must put money into the token's vault. This process cannot be reversed during the auction. Token are initially issued in a "Reserve-Backed Token Auction" or "Bonding Curve Initialization Auction"
+Here's a breakdown of the key elements:</p>
+<ol>
+<li>It's an auction for tokens, where people bid using a stable asset like USDC.</li>
+<li>The auction runs for a fixed period.</li>
+<li>After the auction ends, the collected USDC becomes the reserve for a bonding curve.</li>
+</ol>
+<p>This mechanism combines elements of:</p>
+<ol>
+<li>Dutch auctions (often used in token sales)</li>
+<li>Bonding curves (used in some DeFi protocols)</li>
+<li>Initial liquidity provision for AMMs</li>
+</ol>
+<p>The unique aspect here is that the auction serves as a price discovery mechanism and a way to bootstrap the initial liquidity for the bonding curve. This could potentially lead to a more efficient and fair token distribution while simultaneously setting up the token's long-term trading mechanism.</p>
+<h2 id="stage-2-fun-on-the-curve">Stage 2: Fun on the Curve</h2>
+<p>Once the two initial auction days have passed, the coin enters a phase where it can be traded freely on a curve. This means, the invested capital from the previous round is used to support the buying and selling of token against an automated market maker (AMM). This trading affects the pricing used by the AMM by moving the buy/sell price on a curve. We are planning to start on a constant product formula curve <code>x*y=k</code> which makes the AMM a Constant Product Automated Market Maker (CPAMM).</p>
+<h2 id="further-stages">Further stages</h2>
+<p>Further stages, like listing on DEXes are under consideration but not on the roadmap just yet.</p>
+<h1 id="technology-stack">Technology Stack</h1>
+<ul>
+<li>Solana blockchain: High-performance, scalable layer-1 protocol</li>
+<li>Anchor-ang: Solana's development framework for smart contracts</li>
+<li>Rust: Programming language for on-chain program development</li>
+<li>TypeScript: For building the SDK and enhancing type safety</li>
+<li>Node.js: Server-side runtime environment for JavaScript</li>
+<li>Python: For backend tasks and data processing</li>
+<li>SvelteKit with Vite: As our frontend library</li>
+<li>Web3.js: Library for interacting with the Solana blockchain</li>
+</ul>
+<h1 id="tokenomics">Tokenomics</h1>
+<p>There are no plans to release a separate governance token currently but the potential for a future Token Generation Event (TGE) are present already since collected fees are split between "protocol" and the repository owner.</p>
+<h1 id="use-cases">Use Cases</h1>
+<h2 id="benefits-for-the-developer">Benefits for the developer</h2>
+<ul>
+<li>the owner (or group) of the repo earns a fee on every interaction with the repo.trade program</li>
+<li>the have a fixed amount of token they can claim (after verification of ownership) and use as they wish</li>
+<li>for themselves</li>
+<li>for community rewards</li>
+<li>community incentivized to market the software, e.g. on social media</li>
+</ul>
+<h2 id="benefits-for-the-community">Benefits for the community</h2>
+<ul>
+<li>engagement can be rewarded</li>
+<li>bug reporting</li>
+<li>bug fixing</li>
+<li>feature development</li>
+<li>entertainment when scouting for newest, greatest software</li>
+</ul>
+<h2 id="benefits-for-the-open-source-software-community">Benefits for the open source software community</h2>
+<ul>
+<li>straight-forward implementation of bounty structures</li>
+<li>solana-blinks natively supported</li>
+</ul>
+<h1 id="business-model">Business Model</h1>
+<p>Repo.trade ears revenue by</p>
+<ul>
+<li>transaction fee: interactions with the program</li>
+<li>setup fee (not implemented yet): for creating a new repo on the platform for tokenizing a repository</li>
+</ul>
+<h1 id="conclusion">Conclusion</h1>
+<p>A successful web3 projects needs:</p>
+<ul>
+<li>[x] Community building: Successful projects often focus on building a strong, engaged community.</li>
+<li>[x] Gamification: Many successful platforms incorporate game-like elements to increase user engagement.</li>
+<li>[x] Incentive structures: Well-designed token economics and reward systems can drive user participation.</li>
+<li>[ ] User experience: An intuitive and enjoyable user interface can significantly boost engagement.</li>
+<li>[x] Transparency: Regular updates and open communication with the community often lead to higher trust and engagement.</li>
+<li>[x] Unique value proposition: Projects that offer something novel or solve a real problem tend to attract and retain users.</li>
+<li>[x] Viral mechanics: Features that encourage users to invite others or share content can lead to rapid growth.</li>
+<li>[ ] Continuous improvement: Successful projects often iterate based on user feedback and market trends.</li>
+</ul>
+<p>And repo.trade ticks most of them already.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.indexes"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.471ce7a9.min.js"></script>
+      
+    
+  </body>
+</html>
