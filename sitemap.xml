@@ -31,16 +31,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.repo.trade/basics/how-it-works/</loc>
-         <lastmod>2024-08-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.repo.trade/basics/wtf-is-repotrade/</loc>
-         <lastmod>2024-08-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.repo.trade/concepts/namespaces/</loc>
          <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
