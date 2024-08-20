@@ -12,9 +12,9 @@ Repos, in the context of **repo.trade**, are revolutionary blockchain-based toke
 
 Developers and users should be ecstatic about this innovation as it transforms open-source development into a sustainable, rewarding ecosystem where everyone's efforts are aligned towards mutual success! 🚀✨
 
-## How repo.trade Works Under the Hood
+## 🤔 How does it work
 
-### Tokenizing a Git Respository
+### 🔑 Tokenizing Repositories
 
 Tokenizing a git repository can revolutionize open source development and community engagement. Here's how:
 
@@ -27,9 +27,7 @@ Tokenizing a git repository can revolutionize open source development and commun
 
 By integrating blockchain technology and tokenomics into git repositories, we create an ecosystem where developers can thrive financially while fostering vibrant and engaged communities around open source software.
 
-### Auction and Swaps
-
-## Project Description
+### 📈 Auction and Swaps
 
 **repo.trade** is a groundbreaking platform that leverages auctions and swaps to create a fair initial funding period for open-source projects. Here's how it works:
 
@@ -39,7 +37,7 @@ By integrating blockchain technology and tokenomics into git repositories, we cr
 
 This approach not only democratizes access to early-stage project funding but also aligns incentives among developers, investors, and users. The result is a more equitable ecosystem where creators can sustainably finance their work while fostering community engagement.
 
-### Trading Fees
+### 💰 Trading Fees
 
 Each trade incurs a small fee. These fees accumulate in a pool associated with each repository. Once verified by the platform, these fees are rewarded to the repository owner, creating an ongoing revenue stream for developers.
 

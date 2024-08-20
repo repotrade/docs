@@ -21,14 +21,14 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - Home: index.md
-  - Whitepaper: whitepaper.md
-  - Short Story: short-story.md
-  - Concepts:
+  - 🏠 Home: index.md
+  - 📄 Whitepaper: whitepaper.md
+  - 📚 Short Story: short-story.md
+  - 💡 Concepts:
       - concepts/namespaces.md
       - concepts/repos.md
       - concepts/rewards.md
       - concepts/swaps.md
   # - FAQs: faqs.md
-  - Glossary: glossary.md
-  - Support: support.md
+  - 📖 Glossary: glossary.md
+  - ❓ Support: support.md
