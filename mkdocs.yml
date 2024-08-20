@@ -24,9 +24,6 @@ nav:
   - Home: index.md
   - Whitepaper: whitepaper.md
   - Short Story: short-story.md
-  - Basics:
-      - basics/wtf-is-repotrade.md
-      - basics/how-it-works.md
   - Concepts:
       - concepts/namespaces.md
       - concepts/repos.md
