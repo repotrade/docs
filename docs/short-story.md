@@ -1,3 +1,7 @@
+---
+hide:
+  - navigation
+---
 # A Short Story of the Future
 
 ## Chapter 1: Tokenizing Repositories
@@ -19,3 +23,4 @@ The tokenomics incentivized holders to actively participate in the project's dev
 ## Chapter 5: The Success
 
 As Aria's project flourished, she marveled at how this new ecosystem had transformed open-source development, creating a symbiotic relationship between creators, users, and investors. The blockchain-based token system had turned her passion into a sustainable career, all while fostering a vibrant and engaged community around her work.
+

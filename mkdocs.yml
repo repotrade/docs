@@ -2,8 +2,36 @@ site_name: docs.repo.trade
 site_url: https://docs.repo.trade
 theme:
   name: material
+  palette:
+    primary: yellow
+  navigation_depth: 2
+  font:
+    text: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Whitepaper: whitepaper.md
+  - Short Story: short-story.md
+  - Basics:
+      - basics/wtf-is-repotrade.md
+      - basics/how-it-works.md
+  - Concepts:
+      - concepts/namespaces.md
+      - concepts/repos.md
+      - concepts/rewards.md
+      - concepts/swaps.md
+  # - FAQs: faqs.md
+  - Glossary: glossary.md
+  - Support: support.md
