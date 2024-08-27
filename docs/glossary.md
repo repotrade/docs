@@ -3,6 +3,7 @@ hide:
   - navigation
   - toc
 ---
+
 # Glossary
 
 - **repo**: A repo is a representation of a particular git repository that
@@ -13,4 +14,3 @@ hide:
   to bid for the repository-specific token when it launches.
 - **swap**: After auction, the token is minted and can be swapped against USDC
   on repo.trade.
-

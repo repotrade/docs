@@ -3,11 +3,14 @@ hide:
   - navigation
   - toc
 ---
-# Executive Summary
+
+## Whitepaper
+
+## Executive Summary
 
 Repo.trade is a revolutionary platform designed to solve the persistent underfunding of critical open-source projects by applying successful Web3 engagement strategies. The platform operates in three stages: an initial angel investment period, a curve-based trading phase, and culminates in an decentralized exchange listing (DEL). Repo.trade offers multiple benefits for developers, including fee earnings and token allocations, while providing the community with rewards for engagement and entertainment. The project implements key features such as token-based incentives, gamification, tiered reward systems, and governance participation to drive user engagement and create economic value. By ticking most boxes for successful Web3 projects, including community building, transparency, and a unique value proposition, repo.trade aims to create a self-sustaining ecosystem that aligns the interests of all stakeholders. This innovative approach not only addresses the financial challenges of open-source development but also promotes innovation, enhances security, and contributes to the overall health of the open-source ecosystem.
 
-# Introduction
+## Introduction
 
 - The open-source software development landscape faces a critical issue: chronic underfunding of essential projects.
 - This underfunding persists despite the immense value these projects bring to the digital ecosystem.
@@ -20,7 +23,7 @@ Repo.trade is a revolutionary platform designed to solve the persistent underfun
 - It also enhances community engagement and fosters innovation.
 - Ultimately, repo.trade aims to ensure the long-term viability of critical digital infrastructure.
 
-# Problem Statement
+## Problem Statement
 
 - Chronic underfunding of critical open-source projects
 - Misalignment between value creation and financial compensation in open-source
@@ -33,7 +36,7 @@ Repo.trade is a revolutionary platform designed to solve the persistent underfun
 - Vulnerability to security risks due to inadequate resources for proper maintenance
 - Threat to the overall health and growth of the open-source ecosystem
 
-# Engagement farming
+## Engagement farming
 
 Meanwhile, people are throwing millions of dollars into meme coins merely for the purpose of entertainment and speculation.
 
@@ -51,9 +54,9 @@ Based on the success of Web3 projects in general and pump.fun specifically, as w
 
 These strategies can create economic value by increasing user retention, driving token demand, expanding the user base, and creating a self-sustaining ecosystem of engaged participants.
 
-# Solution Overview
+## Solution Overview
 
-# Stages
+## Stages
 
 ## Stage 1: Auction
 
@@ -80,7 +83,7 @@ Once the two initial auction days have passed, the coin enters a phase where it 
 
 Further stages, like listing on DEXes are under consideration but not on the roadmap just yet.
 
-# Technology Stack
+## Technology Stack
 
 - Solana blockchain: High-performance, scalable layer-1 protocol
 - Anchor-ang: Solana's development framework for smart contracts
@@ -91,11 +94,11 @@ Further stages, like listing on DEXes are under consideration but not on the roa
 - SvelteKit with Vite: As our frontend library
 - Web3.js: Library for interacting with the Solana blockchain
 
-# Tokenomics
+## Tokenomics
 
 There are no plans to release a separate governance token currently but the potential for a future Token Generation Event (TGE) are present already since collected fees are split between "protocol" and the repository owner.
 
-# Use Cases
+## Use Cases
 
 ## Benefits for the developer
 
@@ -118,14 +121,14 @@ There are no plans to release a separate governance token currently but the pote
 - straight-forward implementation of bounty structures
 - solana-blinks natively supported
 
-# Business Model
+## Business Model
 
 Repo.trade ears revenue by
 
 - transaction fee: interactions with the program
 - setup fee (not implemented yet): for creating a new repo on the platform for tokenizing a repository
 
-# Conclusion
+## Conclusion
 
 A successful web3 projects needs:
 
@@ -139,4 +142,3 @@ A successful web3 projects needs:
 - [ ] Continuous improvement: Successful projects often iterate based on user feedback and market trends.
 
 And repo.trade ticks most of them already.
-
