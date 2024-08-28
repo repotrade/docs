@@ -12,7 +12,7 @@ In the context of Repo.Trade, a repo (repository) represents a project or codeba
 
 The repo state, defined in `programs/repotrade/src/states/repo.rs`, includes:
 
-````rust
+```rust
 pub struct Repo {
     pub name: String,
     pub namespace_index: u32,
@@ -31,13 +31,13 @@ pub struct Repo {
 
 Key components:
 
- * name: The repo's name
- * namespace_index: Index of the namespace it belongs to
- * owner: Public key of the repo owner
- * status: Current state of the repo (Pending, Auction, or Swapping)
- * auction: Details about the auction phase
- * usdc_reserve and token_reserve: Liquidity pools for swapping
- * Fee-related fields for tracking balances and claims
+- name: The repo's name
+- namespace_index: Index of the namespace it belongs to
+- owner: Public key of the repo owner
+- status: Current state of the repo (Pending, Auction, or Swapping)
+- auction: Details about the auction phase
+- usdc_reserve and token_reserve: Liquidity pools for swapping
+- Fee-related fields for tracking balances and claims
 
 ## Example from Unit Test
 
@@ -56,7 +56,7 @@ const tx = await program.methods
   })
   .signers([ADMIN_SIGNER])
   .rpc();
-````
+```
 
 In this example:
 
