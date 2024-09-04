@@ -23,6 +23,7 @@ markdown_extensions:
 
 nav:
   - 🏠 Home: index.md
+  - 🚀 Launch: launch.md
   - 📄 Whitepaper: whitepaper.md
   - 📚 Short Story: short-story.md
   - 💡 Concepts:
@@ -32,4 +33,4 @@ nav:
       - concepts/swaps.md
   # - FAQs: faqs.md
   - 📖 Glossary: glossary.md
-  - ❓ Support: support.md
+  - 👥 Community: community.md

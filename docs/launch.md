@@ -28,4 +28,4 @@ Stay tuned for updates on when we'll be launching our first on-chain projects an
 
 ## 🙌 Get Involved
 
-Even in this early stage, your participation is crucial. Register your repositories, vote for projects you believe in, and join our community discussions. Your input will shape the future of open-source funding on repo.trade! 💪🌟
+Even in this early stage, your participation is crucial. Register your repositories, vote for projects you believe in, and join our [community discussions](/community). Your input will shape the future of open-source funding on repo.trade! 💪🌟
