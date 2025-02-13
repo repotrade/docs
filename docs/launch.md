@@ -8,7 +8,7 @@ At repo.trade, we're taking a measured approach to our launch, starting with a s
 
 1. 📚 **Repository Registration**: Users can register any GitHub repository with our site. This is the first step in identifying projects that the community finds valuable and worthy of tokenization.
 
-2. 🗳️ **Voting System**: Each user can vote for up to 10 repositories. This voting mechanism helps us gauge interest and prioritize which projects to onboard in the future.
+2. 🗳️ **Voting System**: Each user can like any repository. This voting mechanism helps us gauge interest and prioritize which projects to onboard in the future.
 
 ### 🤔 Why This Approach?
 
