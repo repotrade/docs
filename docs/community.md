@@ -11,6 +11,7 @@ Welcome to the RepoTrade community! We're excited to have you here and are alway
 
 You can reach out to us through:
 
+- 𝕏 [X/@repo_trade](https://x.com/repo_trade) - Follow us on X
 - 💬 [Telegram](https://t.me/repotrade) - Join our active community for real-time discussions and quick support.
 - 🐙 [GitHub Issues](https://github.com/repotrade) - Report bugs, suggest features, or ask questions related to our codebase.
 
