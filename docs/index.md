@@ -4,17 +4,12 @@ hide:
 ---
 # What is repo.trade?
 
-Repos, in the context of **repo.trade**, are innovative blockchain-based tokens that represent community support for a specific GitHub repository. When a project is pushed to GitHub, a unique token is automatically created for that repository. This system brings numerous benefits:
-
-- **Community Support**: Creators receive support from the community as their project gains recognition, allowing them to focus on development.
-- **Community Engagement**: Token holders become active participants, fostering a more involved and motivated community.
-- **Project Promotion**: Tokens encourage users to actively promote and contribute to the project's success.
-
-Developers and users should be excited about this innovation as it transforms open-source development into a vibrant, community-driven ecosystem where everyone's efforts are aligned towards mutual growth and success! 🚀✨
+Repos, in the context of **repo.trade**, are innovative blockchain-based tokens that represent community support for a specific GitHub repository. When a repository is made available on GitHub, a unique token can be created for that repository.
+Developers and users are excited about this innovation as it transforms open-source development into a vibrant, community-driven ecosystem where everyone's efforts are aligned towards mutual growth and success! 🚀✨
 
 ## 🤔 How does it work
 
-### 🔑 Tokenizing Repositories
+### 🔑 Why Tokenize Repositories
 
 Tokenizing a git repository can revolutionize open source development and community engagement. Here's how:
 
@@ -31,7 +26,7 @@ By integrating blockchain technology and community-driven tokenomics into git re
 
 **repo.trade** is a groundbreaking platform that leverages community-driven mechanisms to create a fair initial support period for open-source projects. Here's how it works:
 
-- **Initial Community Contribution 🏷️**: Instead of traditional fundraising, a community contribution period is held where participants can obtain tokens representing the project. This initial phase ensures fair distribution and community involvement from the start.
+- **Initial Community Contribution 🏷️**: Instead of traditional fundraising, a community contribution period is held where participants can obtain tokens representing the project. In this initial phase, 25% of the total supply are auctioned on a daily basis - for two weeks. This ensures a fairer distribution and community involvement from the start.
 - **Token Distribution 📈**: Community contributions are used to establish a bonding curve, creating a balanced and stable token ecosystem.
 - **Token Exchanges with Community Fees 💱**: Following the initial period, tokens can be exchanged between community members. Notably, small fees from these exchanges benefit the creator of the open-source software.
 

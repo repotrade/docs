@@ -3,7 +3,6 @@ hide:
   - navigation
   - toc
 ---
-
 ## Whitepaper
 
 ## Executive Summary
@@ -135,10 +134,10 @@ A successful web3 projects needs:
 - [x] Community building: Successful projects often focus on building a strong, engaged community.
 - [x] Gamification: Many successful platforms incorporate game-like elements to increase user engagement.
 - [x] Incentive structures: Well-designed token economics and reward systems can drive user participation.
-- [ ] User experience: An intuitive and enjoyable user interface can significantly boost engagement.
+- [x] User experience: An intuitive and enjoyable user interface can significantly boost engagement.
 - [x] Transparency: Regular updates and open communication with the community often lead to higher trust and engagement.
 - [x] Unique value proposition: Projects that offer something novel or solve a real problem tend to attract and retain users.
 - [x] Viral mechanics: Features that encourage users to invite others or share content can lead to rapid growth.
-- [ ] Continuous improvement: Successful projects often iterate based on user feedback and market trends.
+- [x] Continuous improvement: Successful projects often iterate based on user feedback and market trends.
 
 And repo.trade ticks most of them already.
