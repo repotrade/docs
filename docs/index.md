@@ -26,7 +26,7 @@ By integrating blockchain technology and community-driven tokenomics into git re
 
 **repo.trade** is a groundbreaking platform that leverages community-driven mechanisms to create a fair initial support period for open-source projects. Here's how it works:
 
-- **Initial Community Contribution 🏷️**: Instead of traditional fundraising, a community contribution period is held where participants can obtain tokens representing the project. In this initial phase, 25% of the total supply are auctioned on a daily basis - for two weeks. This ensures a fairer distribution and community involvement from the start.
+- **Initial Community Contribution 🏷️**: Instead of traditional fundraising, a community contribution period is held where participants can obtain tokens representing the project. In this initial phase, 50% of the total supply are auctioned on a daily basis - for two weeks. This ensures a fairer distribution and community involvement from the start.
 - **Token Distribution 📈**: Community contributions are used to establish a bonding curve, creating a balanced and stable token ecosystem.
 - **Token Exchanges with Community Fees 💱**: Following the initial period, tokens can be exchanged between community members. Notably, small fees from these exchanges benefit the creator of the open-source software.
 
@@ -37,3 +37,4 @@ This approach democratizes access to early-stage project support and aligns ince
 Each token exchange incurs a small fee. These fees accumulate in a pool associated with each repository. Once verified by the platform, these fees are distributed to the repository owner, creating ongoing support for developers.
 
 By integrating community contribution mechanisms and token exchanges with support fees, repo.trade ensures that creators receive continuous community backing while fostering an active ecosystem that benefits both developers and community members.
+
