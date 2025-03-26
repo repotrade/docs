@@ -1,38 +1,61 @@
-# 🚀 Launching repo.trade: A Phased Approach
+---
+hide:
+  - navigation
+  - toc
+---
 
-## 🌱 Initial Launch: Building Awareness and Community
+## 🚀 Launching Your Repository on Repo.trade
 
-At repo.trade, we're taking a measured approach to our launch, starting with a simplified version of our platform. This strategy allows us to build awareness, gather valuable community input, and ensure a smooth transition to our full-featured blockchain-based system.
+At Repo.trade, we've developed a streamlined process to tokenize valuable open-source repositories and create sustainable funding for developers. Our approach ensures that repository owners receive fair compensation while community members can participate in the success of projects they support.
+***
+### 📋 Launch Process
 
-### 🎉 Current Limitations
+1. **Repository Submission**
+   - Contact us via email at info@repo.trade or DM us
+   - Our team will review your repository for tokenization eligibility
+   - We'll discuss your repository's needs and goals to customize the tokenization process
+***
+2. **Tokenization Setup**
+   - Once approved, we'll configure the tokenization parameters
+   - Repository ownership will be verified through GitHub authentication
+   - Auction parameters will be established in preparation for the launch
+***
+3. **Auction Mechanics**
+   - Your repository enters a 14-day auction period
+   - 500M tokens (50% of total supply) are distributed over the auction period
+   - Each day, 35.7M tokens are auctioned proportionally to contributors
+   - USDC contributions seed the initial liquidity pool
+***
+4. **Post-Auction**
+   - 40% of tokens plus collected USDC go to repository owners
+   - 10% of tokens are reserved for rewarding GitHub contributors
+   - Trading begins on our automated market maker
+   - 50% of all trading fees go directly to repository owners
+***
+### 💰 Economic Benefits
 
-1. 📚 **Repository Registration**: Users can bring forward any GitHub repository to our site and cast their desire for tokenization by liking the repository on repo.trade. This is the first step in identifying projects that the community finds valuable and worthy of tokenization.
+- **Immediate Funding**: Repository owners receive a significant allocation of tokens and contributed USDC
+- **Sustainable Revenue**: Ongoing 50% of trading fees provide continuous income
+- **Community Support**: Aligned incentives create a dedicated community of supporters
+- **Future Development**: Reserved tokens ensure resources for future contributors
+***
+### 🌟 Eligibility Criteria
 
-2. 🗳️ **Likes**: Each user can like any repository. This voting mechanism helps us gauge interest and prioritize which projects to onboard in the future.
+While we aim to support as many open-source projects as possible, our initial focus is on repositories that:
 
-!!! note
+- Demonstrate proven utility and adoption
+- Have active maintenance and development
+- Show potential for community interest and engagement
+- Benefit from tokenization and community funding
+***
+### 📬 Get Started
 
-    **Personal repositories** 👤 can be tokenized by their owners directly by casting
-    their like on their own repository. This will trigger the tokenization and
-    claiming process already with a very short waiting period.
+Ready to transform how your open-source project is funded? Contact us today:
 
-!!! warning
+- Email: info@repo.trade
+- Twitter/X: DM us at @repo_trade
+- Telegram: Join our community at t.me/repotrade
 
-    **Organizational repositories** 🏢 are vetted before their are tokenized. Depending
-    on the growth of repo.trade, we intend to tokenize the most-liked
-    organizational repos on a regular basis to maintain fair chance of
-    participation.
+We'll discuss your repository's specific needs and guide you through the entire process of bringing your project to Repo.trade.
 
-### 🤔 Why This Approach?
-
-1. 📢 **Raising Awareness**: This soft launch allows us to introduce the concept of repo.trade to the wider open-source community, explaining our vision and gathering feedback.
-
-2. 🤝 **Community Building**: By starting with liking, we're fostering community engagement from day one, allowing developers and users to have a say in the platform's direction.
-
-3. 🐣 **Gradual Onboarding**: This approach lets us carefully select and onboard projects for tokenization, ensuring each launch is given proper attention and resources.
-
-4. 🎯 **Resource Optimization**: Launching everything at once in a permissionless way could dilute resources and attention. Our phased approach ensures each project gets the spotlight it deserves.
-
-## 🙌 Get Involved
-
-Even in this early stage, your participation is crucial. Register your repositories, like your projects you believe in, and join our [community discussions](/community). Your input will shape the future of open-source funding on repo.trade! 💪🌟
+*Building a sustainable future for open-source development, where billions don't just flow into open source while contributors get pennies.*

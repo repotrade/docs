@@ -4,10 +4,16 @@ theme:
   name: material
   custom_dir: overrides
   palette:
-    primary: yellow
-  navigation_depth: 2
+    scheme: slate
+    primary: custom
+    accent: custom
   font:
-    text: Roboto Mono
+    text: false
+    code: false
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.instant
     - navigation.instant.progress
@@ -15,26 +21,39 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - header.autohide
+    - search.highlight
+    - search.share
+    - search.suggest
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 
 markdown_extensions:
+  - toc:
+      permalink: false
+      toc_depth: 0
+  - attr_list
+  - md_in_html
   - admonition
-  - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - assets/stylesheets/extra.css
 
 nav:
-  - 🏠 Home: index.md
-  - 🚀 Launch: launch.md
-  - 📄 Whitepaper: whitepaper.md
-  - 📚 Short Story: short-story.md
-  - 💡 Concepts:
-      - concepts/namespaces.md
-      - concepts/repos.md
-      - concepts/rewards.md
-      - concepts/swaps.md
-  # - FAQs: faqs.md
-  - 📖 Glossary: glossary.md
-  - 👥 Community: community.md
+  - Home: index.md
+  - Concepts: concepts.md
+  - Launch: launch.md
+  - FAQs: faqs.md
+  - Community: community.md
+  - Whitepaper: whitepaper.md
+  - Glossary: glossary.md
+  - Short Story: short-story.md
