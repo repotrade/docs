@@ -1,18 +1,96 @@
 {% extends "base.html" %}
 
+{% block content %}
+<div class="content-container">
+  <div class="content-box">
+    <div class="content-header">
+      <h1>{{ page.title }}</h1>
+    </div>
+    <div class="content-section">
+      {{ page.content }}
+    </div>
+  </div>
+</div>
+{% endblock %}
+
 {% block scripts %}
-  {{ super() }}
-  <script
-    defer
-    data-domain="docs.repo.trade"
-    src="https://p.chainsquad.com/js/script.js"
-  ></script>
-  <!-- 404 error pages tracking -->
-  <script>
-    window.plausible =
-      window.plausible ||
-      function () {
-        (window.plausible.q = window.plausible.q || []).push(arguments);
-      };
-  </script>
+{{ super() }}
+<script>
+
+  document$.subscribe(function() {
+    rerender();
+    // For instant navigation changes, listen to the "navigation" event
+    document.addEventListener("navigation", function() {
+      // Small timeout to ensure DOM is ready
+      setTimeout(runYourCustomScript, 100);
+    });
+  });
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    rerender();
+  });
+
+  function rerender() {
+    const mainContent = document.querySelector('.content-section');
+
+    if (!mainContent) return;
+
+    const sections = [];
+    let currentSection = null;
+    let currentElements = [];
+
+    Array.from(mainContent.children).forEach(el => {
+      if (el.tagName === 'H2') {
+        if (currentSection) {
+          sections.push({
+            heading: currentSection,
+            elements: currentElements
+          });
+        }
+        currentSection = el;
+        currentElements = [];
+      } else {
+        currentElements.push(el);
+      }
+    });
+
+    if (currentSection) {
+      sections.push({
+        heading: currentSection,
+        elements: currentElements
+      });
+    }
+
+    mainContent.innerHTML = '';
+
+    sections.forEach(section => {
+      const sectionDiv = document.createElement('div');
+      sectionDiv.className = 'content-section';
+
+      sectionDiv.appendChild(section.heading);
+
+      section.elements.forEach(el => {
+        if (el.tagName === 'UL') {
+          el.querySelectorAll('li').forEach(li => {
+            const text = li.innerHTML;
+
+            if (text.includes(' - ')) {
+              const parts = text.split(' - ', 2);
+
+              if (parts.length === 2) {
+                li.innerHTML = `<span class="term">${parts[0]}</span><span class="definition">${parts[1]}</span>`;
+              }
+            }
+          });
+        }
+
+        sectionDiv.appendChild(el);
+      });
+
+      mainContent.appendChild(sectionDiv);
+    });
+
+    mainContent.classList.remove('content-section');
+  }
+</script>
 {% endblock %}

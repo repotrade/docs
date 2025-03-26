@@ -1,0 +1,366 @@
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="{{ lang.t('header.title') }}"
+  >
+    <div class="header-left">
+      <a
+        href="{{ config.site_url }}"
+        class="md-logo"
+        aria-label="{{ config.site_name }}"
+      >
+        <img src="{{ 'assets/logo.svg' | url }}" alt="logo" class="logo-img" />
+        <span class="site-title">{{ config.site_name }}</span>
+      </a>
+
+      <a
+        href="https://repo.trade"
+        target="_blank"
+        class="info-button"
+        aria-label="Go to repo.trade"
+      >
+        <img src="{{ 'assets/home.svg' | url }}" alt="info" class="info-icon" />
+      </a>
+    </div>
+
+    <div class="header-right">
+      <div class="search-container">
+        <button
+          class="md-search__button"
+          type="button"
+          aria-label="Search"
+          data-md-component="search-button"
+        >
+          <img
+            src="{{ 'assets/search.svg' | url }}"
+            alt="search"
+            class="search-icon"
+          />
+          <span class="search-text">Search</span>
+        </button>
+
+        <div class="md-search" data-md-component="search" role="dialog">
+          <div class="md-search__overlay" for="__search"></div>
+          <div class="md-search__inner" role="search">
+            <form class="md-search__form" name="search">
+              <input
+                type="text"
+                class="md-search__input"
+                name="query"
+                aria-label="{{ lang.t('search.placeholder') }}"
+                placeholder="{{ lang.t('search.placeholder') }}"
+                autocapitalize="off"
+                autocorrect="off"
+                autocomplete="off"
+                spellcheck="false"
+                data-md-component="search-query"
+                data-md-state="active"
+              />
+              <div
+                class="md-search__icon md-icon search-icon-container"
+                for="__search"
+              >
+                <img
+                  src="{{ 'assets/search.svg' | url }}"
+                  alt="search"
+                  class="search-icon"
+                />
+              </div>
+              <!-- Close button removed -->
+            </form>
+            <div class="md-search__output">
+              <div class="md-search__scrollwrap" data-md-scrollfix>
+                <div class="md-search-result" data-md-component="search-result">
+                  <div class="md-search-result__meta">
+                    {{ lang.t("search.result.initializer") }}
+                  </div>
+                  <ol class="md-search-result__list" role="presentation"></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <label class="md-header__button md-icon menu-toggle" for="__drawer">
+        <div class="button-inner">
+          <img src="{{ 'assets/togglemenu.svg' | url }}" alt="menu" />
+        </div>
+      </label>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: clamp(12px, 2vw, 16px);
+  }
+
+  .header-right {
+    display: flex !important;
+    align-items: center;
+    gap: clamp(8px, 2vw, 16px);
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .md-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    height: 100%;
+  }
+
+  .logo-img {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .logo-img:hover {
+    opacity: 0.8;
+  }
+
+  .site-title {
+    color: #f0f6fc;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s;
+    font-size: 14px;
+  }
+
+  .site-title:hover {
+    color: white;
+  }
+
+  .info-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 0 8px;
+    gap: 8px;
+    border: 1px solid #3d444d;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #9198a1;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .info-button:hover {
+    border-color: #8b949e;
+    background-color: rgba(177, 186, 196, 0.12);
+    color: white;
+  }
+
+  .info-button:active {
+    transform: translateY(1px);
+  }
+
+  .info-icon {
+    width: 14px;
+    height: 14px;
+    opacity: 0.7;
+  }
+
+  .md-search {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .md-search--active {
+    display: block;
+  }
+
+  .md-search__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .md-search__inner {
+    position: relative;
+    max-width: 600px;
+    margin: 100px auto 0;
+    z-index: 101;
+  }
+
+  .md-search__input {
+    background-color: transparent;
+    border: none;
+    color: #f0f6fc;
+    width: 100%;
+    height: 100%;
+    padding: 0 48px 0 16px; /* Adjusted padding-right since we removed the close button */
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .md-search__input:focus {
+    outline: none;
+  }
+
+  .md-search__input::placeholder {
+    color: #8b949e;
+  }
+
+  .search-icon-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    right: 12px; /* Adjusted position since we removed the close button */
+  }
+
+  /* Removed close-button styles */
+
+  .search-icon {
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .search-icon:hover {
+    opacity: 1;
+  }
+
+  .md-search-result__meta {
+    padding: 12px 16px;
+    color: #8b949e;
+    font-size: 14px;
+    border-bottom: 1px solid #30363d;
+  }
+
+  .md-search-result__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3d444d;
+    border-radius: 6px;
+    background-color: #010409;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.2s ease;
+  }
+
+  .menu-toggle:hover {
+    border-color: #8b949e;
+    background-color: rgba(177, 186, 196, 0.12);
+  }
+
+  .menu-toggle .button-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-toggle img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s;
+  }
+
+  .menu-toggle:hover img {
+    opacity: 1;
+  }
+
+  [dir="ltr"] .md-search__icon[for="__search"] {
+    top: 50%;
+    margin-top: 0;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchButton = document.querySelector(".md-search__button");
+    const searchOverlay = document.querySelector(".md-search__overlay");
+    const searchModal = document.querySelector(".md-search");
+    const searchInput = document.querySelector(".md-search__input");
+
+    if (searchButton) {
+      searchButton.addEventListener("click", function () {
+        searchModal.classList.add("md-search--active");
+        setTimeout(() => {
+          searchInput.focus();
+        }, 50);
+      });
+    }
+
+    if (searchOverlay) {
+      searchOverlay.addEventListener("click", function () {
+        closeSearch();
+      });
+    }
+
+    // Added event listener for clicking outside the search inner
+    document.addEventListener("click", function (e) {
+      if (
+        searchModal.classList.contains("md-search--active") &&
+        !e.target.closest(".md-search__inner") &&
+        !e.target.closest(".md-search__button")
+      ) {
+        closeSearch();
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (
+        e.key === "Escape" &&
+        searchModal.classList.contains("md-search--active")
+      ) {
+        closeSearch();
+      }
+    });
+
+    function closeSearch() {
+      searchModal.classList.remove("md-search--active");
+      searchInput.value = "";
+    }
+
+    document.addEventListener("click", function (e) {
+      if (e.target.closest(".md-search-result__link")) {
+        closeSearch();
+      }
+    });
+  });
+</script>
+
